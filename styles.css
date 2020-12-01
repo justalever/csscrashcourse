@@ -1,0 +1,610 @@
+/* You can import resource such as fonts like this although it's more common to link to an additional CSS file in your HTML **/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
+/*
+  A common best practice is to define custom properties on the :root pseudo-class, so that it can be applied globally across your HTML document.
+
+  You can define them within selectors all the same.
+*/
+:root {
+  --font-size: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 24px;
+  --primary-color: #4f46e5;
+  --secondary-color: #14b8a6;
+  --dark-color: #222222;
+  --gray-dark: #333333;
+  --gray-medium: #555555;
+  --gray-light: #dddddd;
+  --serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--sans);
+  font-size: var(--font-size);
+  line-height: 1.5;
+  background: var(--primary-color) url("images/topography.svg");
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 900;
+}
+
+/*************************************
+  Form elements + controls
+**************************************/
+body fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  font-size: var(--font-size-lg);
+  font-weight: 900;
+  margin-top: 24px;
+}
+
+legend:first-of-type {
+  margin-top: 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--gray-light);
+  font-size: var(--font-size);
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin-bottom: 2px;
+  margin-top: 20px;
+}
+
+label input[type="radio"] {
+  display: inline;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input[type="file"] + label {
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+  padding: 12px 16px;
+  font-family: sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  margin: 10px 0 0 0;
+  transition: ease 0.3s;
+  border: 1px solid transparent;
+}
+
+input[type="file"] + label:hover {
+  filter: brightness(95%);
+  border: 1px solid var(--gray-medium);
+}
+
+/*************************************
+  Buttons
+**************************************/
+.btn {
+  color: var(--gray-dark);
+  padding: 12px 16px;
+  font-size: var(--font-size-sm);
+  font-family: sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin: 10px 5px 10px 0;
+  line-height: 1;
+  transition: ease 0.3s;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+.btn:hover {
+  filter: brightness(105%);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+}
+
+.btn-white {
+  background-color: white;
+  border: 1px solid var(--gray-light);
+}
+
+/*************************************
+  Containers and content
+**************************************/
+.content {
+  padding: 10px;
+}
+
+.container {
+  max-width: 1000px;
+  /* top + bottom | left + right */
+  margin: 24px auto;
+  background-color: #ffffff;
+  /* top + bottom | left + right */
+  padding: 0;
+  border-radius: 4px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+  font-size: var(--font-size-lg);
+  font-family: var(--serif);
+  font-style: italic;
+  margin: 20px 0;
+  padding: 0 0 0 24px;
+  border-left: 2px solid var(--gray-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+figure figcaption {
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--gray-medium);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+pre {
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 4px;
+  background: var(--gray-dark);
+  color: white;
+}
+
+/*************************************
+  Animation
+**************************************/
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fade-in {
+  animation: fade-in;
+  animation-duration: 0.65s;
+  animation-fill-mode: both;
+}
+
+.slide-up {
+  animation: slide-up;
+  animation-duration: 0.65s;
+  animation-fill-mode: both;
+}
+
+/*************************************
+  Header - Mobile first views
+**************************************/
+
+.site-header {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #414345, #232526);
+  background: linear-gradient(to top, #414345, #232526);
+  color: white;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+}
+
+.site-header a {
+  color: white;
+}
+
+.site-header a:hover {
+  text-decoration: none;
+}
+
+/* .site-header a:visited {
+  color: #fde68a;
+} */
+
+.site-header .thumbnail {
+  max-width: 64px;
+  height: auto;
+  border-radius: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  position: static;
+  transition: transform ease 0.3s;
+}
+
+.site-header .thumbnail:hover {
+  cursor: pointer;
+  border-color: var(--secondary-color);
+  transition: transform ease 0.3s;
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.site-header .header-base-content {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.site-header .header-name {
+  flex: 1;
+}
+
+.site-header .header-contact {
+  font-size: var(--font-size-sm);
+}
+
+.site-header .header-contact p {
+  margin: 0;
+  display: block;
+}
+
+.site-header .divider {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 2px;
+}
+
+.page-title {
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.header-navigation ol {
+  list-style: none;
+  background-color: var(--dark-color);
+  margin: 10px -10px 0 -10px;
+  padding: 0;
+}
+
+.header-navigation a {
+  padding: 10px 16px;
+  margin: 0;
+  display: block;
+  text-decoration: none;
+}
+
+.header-navigation a:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/*************************************
+  Resume Content - Mobile first views
+**************************************/
+.resume-block {
+  margin-bottom: 30px;
+}
+
+.resume-block:first-of-type {
+  margin-top: 40px;
+}
+
+.resume-block h2 {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  line-height: 1;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.resume-block h3 {
+  font-size: var(--font-size);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--secondary-color);
+  line-height: normal;
+  margin: 0;
+}
+
+.resume-block ul,
+.resume-block ol {
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+.resume-block table {
+  width: 100%;
+  border: none;
+  text-align: left;
+}
+
+.resume-block table caption {
+  font-size: var(--font-size-sm);
+  color: #777;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.resume-block table thead {
+  background-color: #f0f0f0;
+}
+
+.resume-block table td,
+.resume-block table th {
+  padding: 4px 10px;
+}
+
+.resume-block details {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--gray-light);
+  padding: 10px;
+}
+
+.resume-block summary {
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.resume-block summary:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*************************************************
+  Homepage Blog Content - Mobile first views
+**************************************************/
+
+.index-blog h2#blog {
+  text-align: left;
+  font-size: 32px;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.index-blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.index-blog article {
+  text-align: left;
+  padding-top: 24px;
+  border-top: 2px solid var(--gray-light);
+}
+
+.index-blog header {
+  font-family: var(--font-sans);
+}
+
+.index-blog header h2 {
+  font-size: var(--font-size-lg);
+  margin: 0;
+  line-height: 1;
+}
+
+.index-blog header p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--gray-medium);
+}
+
+.index-blog article header p {
+  font-family: var(--sans);
+  color: var(--gray-dark);
+  line-height: 1.65;
+}
+
+.index-blog .excerpt {
+  font-size: var(--font-size);
+  font-family: var(--serif);
+}
+
+.index-blog .continue {
+  display: block;
+  background: var(--primary-color);
+  color: #ffffff;
+  padding: 6px 10px;
+  font-family: var(--sans);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+/*************************************************
+  Site footer - Mobile first views
+**************************************************/
+.site-footer {
+  text-align: center;
+  font-size: var(--font-size-sm);
+  padding: 10px 0;
+  margin: 0;
+  border-top: 1px solid var(--gray-light);
+  color: var(--gray-medium);
+}
+
+/*************************************************
+  Contact page
+**************************************************/
+
+body.contact fieldset {
+  margin: 0 0 30px 0;
+}
+
+body.contact legend {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  line-height: 1;
+  padding-bottom: 5px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+body.contact .content .page-title {
+  margin-top: 50px;
+}
+
+/*************************************************
+  Blog articles
+**************************************************/
+body.article .content img:first-of-type {
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.3);
+}
+
+body.article {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+body.article header h2 {
+  font-size: 32px;
+  margin: 30px 0 0 0;
+  line-height: 1;
+}
+
+/* Mobile first approach - We'll think about how content looks on sizes above 767px and then those outside of this @media declaration take effect on mobile */
+@media screen and (min-width: 767px) {
+  .content {
+    padding: 0 60px 60px;
+  }
+
+  .container {
+    margin: 80px auto;
+  }
+
+  /*************************************
+    Header - Desktop views
+  **************************************/
+
+  .site-header {
+    padding: 30px 30px 0 30px;
+    margin-bottom: 0;
+  }
+
+  .site-header .header-base-content {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .site-header .thumbnail {
+    position: absolute;
+    top: calc(-64px / 2);
+    left: 50%;
+    margin-left: calc(-64px / 2);
+  }
+
+  .site-header .header-contact p {
+    margin-left: 10px;
+    display: inline-block;
+  }
+
+  .page-title {
+    font-size: 40px;
+  }
+
+  .header-navigation ol {
+    line-height: 1.75;
+    margin: 0 -30px;
+    display: flex;
+  }
+
+  /*************************************
+  Homepage Blog Content - Desktop view
+  **************************************/
+  .index-blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  .index-blog .continue {
+    display: inline;
+    background: none;
+    color: var(--primary-color);
+    font-family: var(--serif);
+    padding: 0;
+  }
+
+  /*************************************
+  Blog Content - Desktop view
+  **************************************/
+  body.article header h2 {
+    font-size: 48px;
+  }
+}

@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>The Resume of Jane Smith</title>
-  </head>
 
-  <body style="padding: 30px">
-    <h1>Jane Smith</h1>
-    <p>Seattle, WA | <a href="tel:2065555555">(206) 555-5555</a></p>
-    <p>
-      <a href="mailto:jane.smith@gmail.com">jane.smith@gmail.com</a> |
-      <a href="https://janesmith.com">janesmith.com</a>
-    </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | The Resume of Jane Smith</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="reset.css" />
+</head>
 
-    <nav>
-      <ol>
-        <li><a href="#skills">Skills Summary</a></li>
-        <li><a href="#accomplishments">Professional Accommplishments</a></li>
-        <li><a href="#workhistory">Work History</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ol>
-    </nav>
+<body class="contact slide-up">
+  <!--new HTML -->
+  <div class="container">
+    <header class="site-header">
+      <!-- sourced via https://thispersondoesnotexist.com/ -->
 
-    <hr />
-    <br />
+      <div class="header-base-content">
+        <div class="header-name">
+          <a href="index.html">
+            <img class="thumbnail" src="images/jane.jpg" alt="Jane Smith" />
+          </a>
+          <h1 class="page-title">Jane Smith</h1>
+        </div>
 
-    <h2>Contact me using the form below</h2>
-    <form action="/url/to/process/form.php">
-      <fieldset>
-        <legend>Personal information</legend>
-        <label for="fullname">Full name</label>
-        <input type="text" id="fullname" placeholder="Full name" />
+        <div class="header-contact">
+          <p>Seattle, WA <span class="divider">|</span> <a href="tel:2065555555">(206) 555-5555</a></p>
+          <p>
+            <a href="mailto:jane.smith@gmail.com">jane.smith@gmail.com</a>
+            <span class="divider">|</span>
+            <a href="https://janesmith.com">janesmith.com</a>
+          </p>
+        </div>
+      </div>
+
+      <nav class="header-navigation">
+        <ol>
+          <li><a href="index.html#skills">Skills Summary</a></li>
+          <li><a href="index.html#accomplishments">Professional Accomplishments</a></li>
+          <li><a href="index.html#workhistory">Work History</a></li>
+          <li><a href="index.html#education">Education</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ol>
+      </nav>
+    </header>
+
+    <div class="content ">
+
+      <h2 class="page-title">Contact me using the form below</h2>
+      <form action="/url/to/process/form.php">
+        <fieldset>
+          <legend>Personal information</legend>
+          <label for="fullname">Full name</label>
+          <input type="text" id="fullname" placeholder="Full name" />
+
+
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="john.doe@example.com" />
+
+          <label for="telephone">Phone</label>
+          <input type="tel" id="telephone" placeholder="555-555-5555" />
+
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="32" min="18" />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="current-date" value="2020-12-01" min="2020-01-01" max="2021-12-31" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Reason for contact</legend>
+          <label for="fullname">Select a reason</label>
+          <select>
+            <option value="Job offer">Job offer</option>
+            <option value="I have a question">I have a question</option>
+            <option value="I'd like to try and sell you something">
+              I'd like to try and sell you something
+            </option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message details</legend>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"
+            placeholder="Enter your message here. No spam please."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Communication preference</legend>
+          <label>
+            <input type="radio" name="preference" value="email" checked /> Email
+          </label>
+
+          <label>
+            <input type="radio" id="phone" name="preference" value="phone" />
+            Phone
+          </label>
+
+          <label>
+            <input type="radio" name="preference" value="morsecode" /> Morse code
+          </label>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Documents and Color</legend>
+
+          <input type="file" id="file" />
+          <label for="file">Upload a file</label>
+
+          <label for="color">Choose your favorite color</label>
+          <input id="color" type="color" />
+        </fieldset>
 
         <br />
-        <br />
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="john.doe@example.com" />
-
-        <br />
-        <br />
-        <label for="telephone">Phone</label>
-        <input type="tel" id="telephone" placeholder="555-555-5555" />
-
-        <br />
-        <br />
-        <label for="age">Age</label>
-        <input type="number" id="age" placeholder="32" min="18" />
-
-        <br />
-        <br />
-        <label for="date">Date:</label>
-        <input
-          type="date"
-          id="date"
-          name="current-date"
-          value="2020-12-01"
-          min="2020-01-01"
-          max="2021-12-31"
-        />
-      </fieldset>
-
-      <fieldset>
-        <legend>Reason for contact</legend>
-        <label for="fullname">Select a reason</label>
-        <select>
-          <option value="Job offer">Job offer</option>
-          <option value="I have a question">I have a question</option>
-          <option value="I'd like to try and sell you something">
-            I'd like to try and sell you something
-          </option>
-        </select>
-      </fieldset>
-
-      <fieldset>
-        <legend>Message details</legend>
-        <label for="message">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Enter your message here. No spam please."
-        ></textarea>
-      </fieldset>
-
-      <fieldset>
-        <legend>Communication preference</legend>
-
-        <label>
-          <input type="radio" name="preference" value="email" checked /> Email
-        </label>
-
-        <label>
-          <input type="radio" id="phone" name="preference" value="phone" />
-          Phone
-        </label>
-
-        <label>
-          <input type="radio" name="preference" value="morsecode" /> Morse code
-        </label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Documents and Color</legend>
-
-        <label for="file">Upload a file</label>
-        <input type="file" id="file" />
-
-        <label for="color">Choose your favorite color</label>
-        <input id="color" type="color" />
-      </fieldset>
-
-      <br />
-      <input type="submit" value="Submit form" />
-      <input type="reset" value="Reset form" accesskey="r" />
-    </form>
-    <footer>
+        <input type="submit" class="btn btn-primary" value="Submit form" />
+        <input type="reset" class="btn btn-white" value="Reset form" accesskey="r" />
+      </form>
+    </div>
+    <footer class="site-footer">
       Copyright &copy; 2020.
       <address>123 Easy Street, Seattle, WA 98101</address>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>

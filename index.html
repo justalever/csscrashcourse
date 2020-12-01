@@ -1,230 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>The Resume of Jane Smith</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body style="padding: 30px">
-    <h1>Jane Smith</h1>
-    <p>Seattle, WA | <a href="tel:2065555555">(206) 555-5555</a></p>
-    <p>
-      <a href="mailto:jane.smith@gmail.com">jane.smith@gmail.com</a> |
-      <a href="https://janesmith.com">janesmith.com</a>
-    </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Resume of Jane Smith</title>
 
-    <nav>
-      <ol>
-        <li><a href="#skills">Skills Summary</a></li>
-        <li><a href="#accomplishments">Professional Accomplishments</a></li>
-        <li><a href="#workhistory">Work History</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ol>
-    </nav>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="reset.css" />
+</head>
 
-    <hr />
+<body class="fade-in">
+  <!--new HTML -->
+  <div class="container">
+    <header class="site-header">
+      <!-- sourced via https://thispersondoesnotexist.com/ -->
 
-    <h2 id="skills">Skills Summary</h2>
-    <p>
-      A few sentences of bullet points listing the most relevant hard skills and
-      soft skills related to the position for which you are applying.
-    </p>
+      <div class="header-base-content">
+        <div class="header-name">
+          <img class="thumbnail" src="images/jane.jpg" alt="Jane Smith" />
+          <h1 class="page-title">Jane Smith</h1>
+        </div>
 
-    <hr />
+        <div class="header-contact">
+          <p>Seattle, WA <span class="divider">|</span> <a href="tel:2065555555">(206) 555-5555</a></p>
+          <p>
+            <a href="mailto:jane.smith@gmail.com">jane.smith@gmail.com</a>
+            <span class="divider">|</span>
+            <a href="https://janesmith.com">janesmith.com</a>
+          </p>
+        </div>
+      </div>
 
-    <h2>Professional Accomplishments</h2>
-    <h3>Major skill 1 (Example: Management)</h3>
+      <nav class="header-navigation">
+        <ol>
+          <li><a href="#skills">Skills Summary</a></li>
+          <li><a href="#accomplishments">Professional Accomplishments</a></li>
+          <li><a href="#workhistory">Work History</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ol>
+      </nav>
+    </header>
 
-    <ul>
-      <li>
-        More detail of the skill and how it relates to the job application
-      </li>
-      <li>Examples of projects or situation that utilized this skill</li>
-      <li>Measurable results and accomplishments that back up your ability</li>
-    </ul>
+    <div class="content">
+      <div class="resume-block">
+        <h2 id="skills">Skills Summary</h2>
+        <p>
+          A few sentences of bullet points listing the most relevant hard skills and
+          soft skills related to the position for which you are applying.
+        </p>
+      </div>
 
-    <h3>Major skill 2 (Example: Manager)</h3>
+      <div class="resume-block">
+        <h2 id="accomplishments">Professional Accomplishments</h2>
+        <h3>Major skill 1 (Example: Management)</h3>
 
-    <ul>
-      <li>
-        More detail of the skill and how it relates to the job application
-      </li>
-      <li>Examples of projects or situation that utilized this skill</li>
-      <li>Measurable results and accomplishments that back up your ability</li>
-    </ul>
+        <ul>
+          <li>
+            More detail of the skill and how it relates to the job application
+          </li>
+          <li>Examples of projects or situation that utilized this skill</li>
+          <li>Measurable results and accomplishments that back up your ability</li>
+        </ul>
 
-    <h3>Major skill 3 (Example: Manager)</h3>
+        <h3>Major skill 2 (Example: Manager)</h3>
 
-    <ul>
-      <li>
-        More detail of the skill and how it relates to the job application
-      </li>
-      <li>Examples of projects or situation that utilized this skill</li>
-      <li>Measurable results and accomplishments that back up your ability</li>
-    </ul>
+        <ul>
+          <li>
+            More detail of the skill and how it relates to the job application
+          </li>
+          <li>Examples of projects or situation that utilized this skill</li>
+          <li>Measurable results and accomplishments that back up your ability</li>
+        </ul>
 
-    <br />
-    <hr />
-    <br />
+        <h3>Major skill 3 (Example: Manager)</h3>
 
-    <h2 id="workhistory">Work History</h2>
+        <ul>
+          <li>
+            More detail of the skill and how it relates to the job application
+          </li>
+          <li>Examples of projects or situation that utilized this skill</li>
+          <li>Measurable results and accomplishments that back up your ability</li>
+        </ul>
+      </div>
 
-    <table>
-      <caption>
-        My awesome work history
-      </caption>
-      <thead>
-        <tr>
-          <th>Position</th>
-          <th>Company</th>
-          <th>Start date</th>
-          <th>End date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Manager</td>
-          <td>Apple, Inc.</td>
-          <td>June 24, 2008</td>
-          <td>June 24, 2010</td>
-        </tr>
-        <tr>
-          <td>Manager</td>
-          <td>Apple, Inc.</td>
-          <td>June 24, 2008</td>
-          <td>June 24, 2010</td>
-        </tr>
-        <tr>
-          <td>Manager</td>
-          <td>Google</td>
-          <td>June 24, 2010</td>
-          <td>June 24, 2012</td>
-        </tr>
-        <tr>
-          <td>Manager</td>
-          <td>Space X</td>
-          <td>June 24, 2012</td>
-          <td>June 24, 2014</td>
-        </tr>
-        <tr>
-          <td>Manager</td>
-          <td>Disney</td>
-          <td>June 24, 2014</td>
-          <td>Present</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Position footer</td>
-          <td>..</td>
-          <td>..</td>
-          <td>..</td>
-        </tr>
-      </tfoot>
-    </table>
+      <div class="resume-block">
+        <h2 id="workhistory">Work History</h2>
 
-    <br />
-    <hr />
-    <br />
+        <table>
+          <caption>
+            My awesome work history
+          </caption>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Company</th>
+              <th>Start date</th>
+              <th>End date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Manager</td>
+              <td>Apple, Inc.</td>
+              <td>June 24, 2008</td>
+              <td>June 24, 2010</td>
+            </tr>
+            <tr>
+              <td>Manager</td>
+              <td>Apple, Inc.</td>
+              <td>June 24, 2008</td>
+              <td>June 24, 2010</td>
+            </tr>
+            <tr>
+              <td>Manager</td>
+              <td>Google</td>
+              <td>June 24, 2010</td>
+              <td>June 24, 2012</td>
+            </tr>
+            <tr>
+              <td>Manager</td>
+              <td>Space X</td>
+              <td>June 24, 2012</td>
+              <td>June 24, 2014</td>
+            </tr>
+            <tr>
+              <td>Manager</td>
+              <td>Disney</td>
+              <td>June 24, 2014</td>
+              <td>Present</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h2 id="education">Education</h2>
+      <div class="resume-block">
+        <h2 id="education">Education</h2>
 
-    <details open>
-      <summary>
-        <em>Bachelors Degree, Management</em>,
-        <strong>Harvard University</strong>, 2008
-      </summary>
+        <details open>
+          <summary>
+            <em>Bachelors Degree, Management</em>,
+            <strong>Harvard University</strong>, 2008
+          </summary>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facilis,
-        ex dicta nesciunt saepe provident inventore neque tenetur, deserunt
-        repellendus similique doloremque quibusdam itaque ducimus enim atque
-        sed, corporis perferendis?
-      </p>
-    </details>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facilis,
+            ex dicta nesciunt saepe provident inventore neque tenetur, deserunt
+            repellendus similique doloremque quibusdam itaque ducimus enim atque
+            sed, corporis perferendis?
+          </p>
+        </details>
 
-    <details>
-      <summary>
-        <em>High School Diploma</em>, <strong>Harvard High School</strong>, 2005
-      </summary>
+        <details>
+          <summary>
+            <em>High School Diploma</em>, <strong>Harvard High School</strong>, 2005
+          </summary>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facilis,
-        ex dicta nesciunt saepe provident inventore neque tenetur, deserunt
-        repellendus similique doloremque quibusdam itaque ducimus enim atque
-        sed, corporis perferendis?
-      </p>
-    </details>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facilis,
+            ex dicta nesciunt saepe provident inventore neque tenetur, deserunt
+            repellendus similique doloremque quibusdam itaque ducimus enim atque
+            sed, corporis perferendis?
+          </p>
+        </details>
+      </div>
+    </div>
+  </div>
 
-    <br />
-    <hr />
-    <br />
+  <div class="container">
+    <div class="index-blog content">
+      <h2 id="blog">Blog</h2>
 
-    <h2 id="blog">Blog</h2>
 
-    <table>
-      <tr>
-        <td>
-          <article style="padding: 10px; border: 1px solid black">
-            <header>
-              <h2>Latest blog post title</h2>
-              <p>October 31, 2020</p>
-            </header>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-              cum delectus culpa, cupiditate quia libero fugit beatae quis
-              consequuntur nam similique autem qui nisi adipisci, nihil odio
-              nobis ipsum doloribus.
-              <a href="blog-post-1.html">Continue reading...</a>
-            </p>
-            <footer></footer>
-          </article>
-        </td>
-        <td>
-          <article style="padding: 10px; border: 1px solid black">
-            <header>
-              <h2>Latest blog post title 2</h2>
-              <p>October 31, 2020</p>
-            </header>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-              cum delectus culpa, cupiditate quia libero fugit beatae quis
-              consequuntur nam similique autem qui nisi adipisci, nihil odio
-              nobis ipsum doloribus.
-              <a href="blog-post-2.html">Continue reading...</a>
-            </p>
+      <div class="index-blog-grid">
+        <article>
+          <header>
+            <h2>Latest blog post title</h2>
+            <p>October 31, 2020</p>
+          </header>
+          <p class="excerpt">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+            cum delectus culpa, cupiditate quia libero fugit beatae quis
+            consequuntur nam similique autem qui nisi adipisci, nihil odio
+            nobis ipsum doloribus.
+            <a href="blog-post-1.html" class="continue">Continue reading...</a>
+          </p>
+        </article>
 
-            <footer></footer>
-          </article>
-        </td>
-        <td>
-          <article style="padding: 10px; border: 1px solid black">
-            <header>
-              <h2>Latest blog post title 3</h2>
-              <p>October 31, 2020</p>
-            </header>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-              cum delectus culpa, cupiditate quia libero fugit beatae quis
-              consequuntur nam similique autem qui nisi adipisci, nihil odio
-              nobis ipsum doloribus.
-              <a href="blog-post-3.html">Continue reading...</a>
-            </p>
-            <footer></footer>
-          </article>
-        </td>
-      </tr>
-    </table>
+        <article>
+          <header>
+            <h2>Latest blog post title 2</h2>
+            <p>October 31, 2020</p>
+          </header>
+          <p class="excerpt">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+            cum delectus culpa, cupiditate quia libero fugit beatae quis
+            consequuntur nam similique autem qui nisi adipisci, nihil odio
+            nobis ipsum doloribus.
+            <a href="blog-post-2.html" class="continue">Continue reading...</a>
+          </p>
+        </article>
 
-    <br />
-    <hr />
-    <br />
+        <article>
+          <header>
+            <h2>Latest blog post title 3</h2>
+            <p>October 31, 2020</p>
+          </header>
+          <p class="excerpt">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+            cum delectus culpa, cupiditate quia libero fugit beatae quis
+            consequuntur nam similique autem qui nisi adipisci, nihil odio
+            nobis ipsum doloribus.
+            <a href="blog-post-3.html" class="continue">Continue reading...</a>
+          </p>
+        </article>
+      </div>
+    </div>
 
-    <footer>
+
+    <footer class="site-footer">
       Copyright &copy; 2020.
       <address>123 Easy Street, Seattle, WA 98101</address>
     </footer>
-  </body>
+  </div>
+
+</body>
+
 </html>
