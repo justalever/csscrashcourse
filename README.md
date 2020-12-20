@@ -1,8 +1,10 @@
 # CSS Crash Course
 
+[![](https://f001.backblazeb2.com/file/webcrunch/CSS%20Crash%20Course.jpg)](https://web-crunch.com/posts/css-crash-course)
+
 by Andy Leverenz of [web-crunch.com](https://web-crunch.com)
 
-Find the source code linked here:
+[HTML Crash Course](https://web-crunch.com/posts/html-crash-course) - [HTML Crash Source Code](https://github.com/justalever/htmlcrashcourse)
 
 
 
